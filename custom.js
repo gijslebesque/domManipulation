@@ -61,4 +61,40 @@ function makeAlert() {
 
 const img = document.getElementById("anImg");
 
-img.setAttribute("src", "https://images-cdn.9gag.com/photo/a9dnogD_700b.jpg");
+const header = document.getElementById("header");
+console.log(header);
+// const header = {
+//     innerHTML = ""
+// }
+
+header.innerHTML = "Hello";
+
+header.innerHTML = "Woei";
+
+// img.setAttribute("src", "https://images-cdn.9gag.com/photo/a9dnogD_700b.jpg");
+
+window.onload = function() {
+  const searchBtn = document.getElementById("search-btn");
+  searchBtn.addEventListener("click", findElement);
+
+  const familyContainer = document.getElementById("soprano-family");
+  function findElement() {
+    const livia = familyContainer.children[0];
+
+    const tonyAndJanice = livia.children;
+
+    const tony = tonyAndJanice[0];
+    const janice = tonyAndJanice[1];
+
+    const toniesChildren = tony.children;
+
+    const antonyJunior = tony.getElementsByClassName("aj")[0];
+    const grandma = antonyJunior.closest(".livia");
+
+    const meadow = livia.querySelector(".meadow");
+
+    const brother = meadow.nextSibling;
+
+    debugger;
+  }
+};
