@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div id="anId">This element has an id</div>
+      <code>document.getElementById("anId");</code>
+    </section>
+
+    <hr />
+
+    <section>
+      <div class="aClassName">This element has a class</div>
+      <div class="aClassName">This element has a class</div>
+      <div class="aClassName">This element has a class</div>
+      <div class="aClassName">This element has a class</div>
+
+      <code>document.getElementsByClassName("aClass");</code>
+    </section>
+
+    <button onclick="makeAlert()">Alert me on click</button>
+
+    <img id="anImg" src="" alt="" />
+    <!-- 
+      Add your script before the end of the body 
+      This mostly has historical reasons: scripts take more time to load
+      putting it at the end of the body allows the 
+      content to render irregardless of the script's size.
+    -->
+    <script src="./custom.js
+    "></script>
+  </body>
+</html>
